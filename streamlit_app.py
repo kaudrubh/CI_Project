@@ -5,8 +5,8 @@ import joblib
 # Load the saved model and scaler
 @st.cache_resource
 def load_model():
-    model = joblib.load('random_forest_model.pkl')
-    scaler = joblib.load('scaler.pkl')
+    model = joblib.load('random_forest_model_compressed.pkl')
+    scaler = joblib.load('scaler_compressed.pkl')
     return model, scaler
 
 model, scaler = load_model()
